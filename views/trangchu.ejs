@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Demo Chat </title>
+  <script src="jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="xuly.js"> </script>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="loginForm">
+      <h3>Unik family chat service <br> Enter your name </br></h3>
+      <input type="text" placeholder="Username" id="txtUsername"/>
+      <input type="button" value="Login" id="btnRegister" />
+    </div>
+    <div id="chatForm" style= "display: none;">
+      <div id="left">
+        <div id="boxTitle">User Online</div>
+        <div id="boxContent"></div>
+      </div>
+      <div id="right">
+        <div id="sayHi">
+          Hello <span id="currentUser">Teo</span>
+          <input type="button" id="btnLogout" value="Logout">
+        </div>
+
+        <div id="listMessage"></div>
+        <input type = "text" placeholder="Enter Message" id = "txtMessage" name="txtMessage"/>
+        <input type = "button" id = "btnSendMessage" value = "Send"/>
+        <div id = "thongbao"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
