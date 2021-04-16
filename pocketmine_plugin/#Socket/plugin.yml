@@ -1,0 +1,6 @@
+name: Socket
+version: 1.0.0
+main: TungstenVn\Socket\Socket
+api: 3.0.0
+author: TungstenVn
+ 
